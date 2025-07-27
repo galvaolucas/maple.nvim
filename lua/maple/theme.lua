@@ -158,7 +158,7 @@ function maple.setup(opts)
 		pattern = "*",
 		callback = function()
 			vim.api.nvim_set_hl(0, "@type.builtin.tsx", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@tag.builtin.tsx", { fg = c.bright_blue })
+			vim.api.nvim_set_hl(0, "@tag.builtin.tsx", { fg = c.bright_red })
 			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_yellow })
 			vim.api.nvim_set_hl(0, "@tag.tsx", { fg = c.bright_blue, bold = false })
 			vim.api.nvim_set_hl(0, "@type.tsx", { fg = c.bright_yellow, bold = true })
