@@ -158,6 +158,9 @@ function maple.setup(opts)
 	--
 	vim.api.nvim_set_hl(0, "@jsx_element", { fg = "#ff0000", bg = "#ff0000", bold = true })
 	vim.api.nvim_set_hl(0, "Special", { fg = "#ff0000", bg = "#ff0000", bold = true })
+	vim.api.nvim_set_hl(0, "@tag", { fg = "#ff5555", bold = true })
+	vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = "#ff79c6" })
+	vim.api.nvim_set_hl(0, "@tag.attribute", { fg = "#8be9fd" })
 
 	-- Transparency fix for sidebars and floating windows
 	if transparent then
