@@ -21,8 +21,8 @@ maple.colors = {
 	bright_cyan = "#bafffe",
 	bright_white = "#ffffff",
 
-	cursor = "#8d9db4",
-	selection = "#6c7a89",
+	cursor = "#cba6f7",
+	selection = "#5c6773",
 	comment = "#999999",
 	border = "#44444b",
 }
