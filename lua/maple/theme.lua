@@ -159,8 +159,8 @@ function maple.setup(opts)
 		pattern = "*",
 		callback = function()
 			vim.api.nvim_set_hl(0, "@tag", { fg = c.blue, bold = true })
-			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.blue }) -- <>
-			vim.api.nvim_set_hl(0, "Special", { fg = "#ff0000", bold = true })
+			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.magenta }) -- <>
+			vim.api.nvim_set_hl(0, "Special", { fg = c.magenta, bold = true })
 		end,
 	})
 
