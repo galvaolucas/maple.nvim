@@ -155,8 +155,9 @@ function maple.setup(opts)
 	hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
 
 	-- For JSX/TSX HTML tags: color brackets and tag names the same (cyan here)
-	hi("@_jsx_element", { fg = c.bright_red }) -- Tag names
-	hi("Special", { fg = c.bright_red }) -- Tag names
+	--
+	hi("@_jsx_element", { fg = c.bright_red, bg = c.bright_red, bold = true })
+	hi("Special", { fg = c.blue, bg = c.blue, bold = true })
 
 	-- Transparency fix for sidebars and floating windows
 	if transparent then
