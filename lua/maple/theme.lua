@@ -156,8 +156,8 @@ function maple.setup(opts)
 
 	-- For JSX/TSX HTML tags: color brackets and tag names the same (cyan here)
 	--
-	hi("@_jsx_element", { fg = c.bright_red, bg = c.bright_red, bold = true })
-	hi("Special", { fg = c.blue, bg = c.blue, bold = true })
+	vim.api.nvim_set_hl(0, "@jsx_element", { fg = "#ff0000", bg = "#ff0000", bold = true })
+	vim.api.nvim_set_hl(0, "Special", { fg = "#ff0000", bg = "#ff0000", bold = true })
 
 	-- Transparency fix for sidebars and floating windows
 	if transparent then
