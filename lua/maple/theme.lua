@@ -119,7 +119,7 @@ function maple.setup(opts)
 	hi("@operator", { fg = c.magenta })
 	hi("@parameter", { fg = c.fg })
 	hi("@punctuation.delimiter", { fg = c.fg })
-	hi("@punctuation.bracket", { fg = c.fg })
+	hi("@punctuation.bracket", { fg = c.blue })
 
 	hi("@lsp.type.namespace", { link = "@namespace" })
 	hi("@lsp.type.type", { link = "@type" })
