@@ -159,7 +159,10 @@ function maple.setup(opts)
 		pattern = "*",
 		callback = function()
 			vim.api.nvim_set_hl(0, "@custom.jsx_component", { fg = "#ff79c6", bold = true })
+			vim.api.nvim_set_hl(0, "@_jsx_component", { fg = "#ff79c6", bold = true })
 			vim.api.nvim_set_hl(0, "@tag", { fg = "#ff5555", bold = true })
+			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = "#ff79c6" }) -- <>
+			vim.api.nvim_set_hl(0, "@tag.attribute", { fg = "#8be9fd" })
 			-- Add any other highlights here
 		end,
 	})
