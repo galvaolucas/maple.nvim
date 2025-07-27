@@ -1,3 +1,5 @@
+-- ~/.config/nvim/lua/maple_lualine.lua
+
 local maple_lualine = {}
 
 -- Colors from the maple theme palette
