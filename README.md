@@ -9,8 +9,19 @@ A warm, soft Neovim theme inspired by the Maple VSCode theme. Includes Lualine s
   "lucasgalvao/maple.nvim",
   config = function()
     require("colors.maple").setup({ transparent = true })
-    vim.cmd("colorscheme maple")
   end
 }
 
+```
+
+Then in your init.lua:
+
+```
+    vim.cmd("colorscheme maple")
+```
+
+If you wanna also use the lualine theme:
+
+```
+require("maple.lualine")
 ```
