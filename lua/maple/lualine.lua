@@ -1,8 +1,5 @@
 -- ~/.config/nvim/lua/maple_lualine.lua
 
-local maple_lualine = {}
-
--- Colors from the maple theme palette
 local colors = {
 	bg = "#1e1e1f",
 	fg = "#cbd5e1",
@@ -17,8 +14,7 @@ local colors = {
 	grey = "#44444b",
 }
 
--- Lualine theme using Maple colors
-local bubbles_theme = {
+local theme = {
 	normal = {
 		a = { fg = colors.black, bg = colors.magenta, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.grey },
@@ -40,24 +36,22 @@ local bubbles_theme = {
 	},
 }
 
-function maple_lualine.setup()
-	require("lualine").setup({
+-- Auto setup lualine on require
+local status_ok, lualine = pcall(require, "lualine")
+if status_ok then
+	lualine.setup({
 		options = {
-			theme = bubbles_theme,
+			theme = theme,
 			component_separators = "",
 			section_separators = { left = "", right = "" },
 		},
 		sections = {
 			lualine_a = { { "mode", separator = { left = "" }, right_padding = 2 } },
 			lualine_b = { "filename", "branch" },
-			lualine_c = {
-				"%=", -- Center alignment marker
-			},
+			lualine_c = { "%=" },
 			lualine_x = {},
 			lualine_y = { "filetype", "progress" },
-			lualine_z = {
-				{ "location", separator = { right = "" }, left_padding = 2 },
-			},
+			lualine_z = { { "location", separator = { right = "" }, left_padding = 2 } },
 		},
 		inactive_sections = {
 			lualine_a = { "filename" },
@@ -72,4 +66,4 @@ function maple_lualine.setup()
 	})
 end
 
-return maple_lualine
+return theme
