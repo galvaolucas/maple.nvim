@@ -121,8 +121,11 @@ function maple.setup(opts)
 	hi("@punctuation.delimiter", { fg = c.fg })
 	hi("@punctuation.bracket", { fg = c.fg })
 	-- JSX / TSX specific
-	hi("@tag", { fg = c.blue, bold = true }) -- component names, e.g. <BaseSection>
-	hi("@attribute", { fg = c.yellow, italic = true }) -- attributes, e.g. className, id
+	hi("@tag", { fg = c.blue, bold = true })
+	hi("jsxTagName", { fg = c.blue, bold = true })
+
+	hi("@attribute", { fg = c.yellow, italic = true })
+	hi("jsxAttribute", { fg = c.yellow, italic = true })
 
 	hi("@lsp.type.namespace", { link = "@namespace" })
 	hi("@lsp.type.type", { link = "@type" })
