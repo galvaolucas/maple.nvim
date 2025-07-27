@@ -156,9 +156,10 @@ function maple.setup(opts)
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		pattern = "*",
 		callback = function()
-			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_red, bold = true })
-			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.magenta }) -- <>
-			vim.api.nvim_set_hl(0, "Special", { fg = c.bright_green, bold = true })
+			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_yellow, bold = true })
+			vim.api.nvim_set_hl(0, "@_jsx_element", { fg = c.blue, bold = true })
+			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.bright_blue }) -- <>
+			vim.api.nvim_set_hl(0, "Special", { fg = c.bright_red, bold = true })
 		end,
 	})
 
