@@ -21,8 +21,8 @@ maple.colors = {
 	bright_cyan = "#bafffe",
 	bright_white = "#ffffff",
 
-	cursor = "#cba6f7",
-	selection = "#5c6773",
+	cursor = "#ebe5ff",
+	selection = "#cbd5e1",
 	comment = "#999999",
 	border = "#44444b",
 }
@@ -34,6 +34,7 @@ end
 function maple.setup(opts)
 	opts = opts or {}
 	local transparent = opts.transparent or false
+	local italic = opts.italic or false
 	local c = maple.colors
 
 	if transparent then
@@ -172,6 +173,18 @@ function maple.setup(opts)
 				-- Telescope
 				vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "NONE" })
 				vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "NONE" })
+			end,
+		})
+	end
+
+	if italic then
+		vim.api.nvim_create_autocmd("ColorScheme", {
+			pattern = "maple",
+			callback = function()
+				vim.api.nvim_set_hl(0, "Keyword", { italic = true })
+				vim.api.nvim_set_hl(0, "@keyword", { italic = true })
+				vim.api.nvim_set_hl(0, "@keyword.function", { italic = true })
+				vim.api.nvim_set_hl(0, "@operator", { italic = true })
 			end,
 		})
 	end
