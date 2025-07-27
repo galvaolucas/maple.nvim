@@ -149,18 +149,16 @@ function maple.setup(opts)
 
 	hi("Search", { bg = c.yellow, fg = c.black })
 	hi("IncSearch", { bg = c.yellow, fg = c.black, bold = true })
-
 	hi("CursorLineNr", { fg = c.white, bold = true })
-
 	hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
 
 	-- For JSX/TSX HTML tags: color brackets and tag names the same (cyan here)
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		pattern = "*",
 		callback = function()
-			vim.api.nvim_set_hl(0, "@tag", { fg = c.blue, bold = true })
+			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_red, bold = true })
 			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.magenta }) -- <>
-			vim.api.nvim_set_hl(0, "Special", { fg = c.magenta, bold = true })
+			vim.api.nvim_set_hl(0, "Special", { fg = c.bright_green, bold = true })
 		end,
 	})
 
