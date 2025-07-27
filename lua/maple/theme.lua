@@ -11,6 +11,7 @@ maple.colors = {
 	cyan = "#a1e8e5",
 	white = "#f3f2f2",
 	black = "#333333",
+	pink = "#f3b8ff",
 
 	bright_black = "#666666",
 	bright_red = "#ffc4c4",
@@ -156,15 +157,16 @@ function maple.setup(opts)
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		pattern = "*",
 		callback = function()
-			vim.api.nvim_set_hl(0, "@type.builtin.tsx", { fg = c.magenta, bold = true })
-			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_yellow, bold = true })
-			vim.api.nvim_set_hl(0, "@tag.tsx", { fg = c.bright_blue, bold = true })
-			vim.api.nvim_set_hl(0, "@_jsx_element", { fg = c.cyan, bold = true })
-			vim.api.nvim_set_hl(0, "@_jsx_element.tsx", { fg = c.cyan, bold = true })
-			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.bright_blue }) -- <>
+			vim.api.nvim_set_hl(0, "@type.builtin.tsx", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_yellow })
+			vim.api.nvim_set_hl(0, "@tag.tsx", { fg = c.bright_blue })
+			vim.api.nvim_set_hl(0, "@_jsx_element", { fg = c.cyan })
+			vim.api.nvim_set_hl(0, "@_jsx_element.tsx", { fg = c.cyan })
+			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.bright_blue })
 			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.bright_red })
 			vim.api.nvim_set_hl(0, "@operator.tsx", { fg = c.bright_blue })
-			vim.api.nvim_set_hl(0, "@_jsx_attribute.tsx", { fg = c.bright_yellow, bold = true })
+			vim.api.nvim_set_hl(0, "@_jsx_attribute.tsx", { fg = c.bright_yellow })
+			vim.api.nvim_set_hl(0, "@punctuation.bracket.tsx", { fg = c.pink })
 		end,
 	})
 
