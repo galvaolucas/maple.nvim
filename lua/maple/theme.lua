@@ -155,13 +155,14 @@ function maple.setup(opts)
 	hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
 
 	-- For JSX/TSX HTML tags: color brackets and tag names the same (cyan here)
-	--
-	vim.api.nvim_set_hl(0, "@jsx_element", { fg = "#ff0000", bg = "#ff0000", bold = true })
-	vim.api.nvim_set_hl(0, "Special", { fg = "#ff0000", bg = "#ff0000", bold = true })
-	vim.api.nvim_set_hl(0, "@tag", { fg = "#ff5555", bold = true })
-	vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = "#ff79c6" })
-	vim.api.nvim_set_hl(0, "@tag.attribute", { fg = "#8be9fd" })
-	hi("@custom.jsx_component", { fg = c.pink, bold = true })
+	vim.api.nvim_create_autocmd("ColorScheme", {
+		pattern = "*",
+		callback = function()
+			vim.api.nvim_set_hl(0, "@custom.jsx_component", { fg = "#ff79c6", bold = true })
+			vim.api.nvim_set_hl(0, "@tag", { fg = "#ff5555", bold = true })
+			-- Add any other highlights here
+		end,
+	})
 
 	-- Transparency fix for sidebars and floating windows
 	if transparent then
