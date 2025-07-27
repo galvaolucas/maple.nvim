@@ -121,11 +121,6 @@ function maple.setup(opts)
 	hi("@punctuation.delimiter", { fg = c.fg })
 	hi("@punctuation.bracket", { fg = c.fg })
 
-	-- JSX / TSX specific
-	hi("@tag", { fg = c.blue, bold = true })
-	hi("jsxTagName", { fg = c.blue, bold = true })
-	hi("@jsx_attribute", { fg = c.bright_red, bold = true })
-
 	hi("@lsp.type.namespace", { link = "@namespace" })
 	hi("@lsp.type.type", { link = "@type" })
 	hi("@lsp.type.class", { link = "@type" })
@@ -158,6 +153,19 @@ function maple.setup(opts)
 	hi("CursorLineNr", { fg = c.white, bold = true })
 
 	hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
+
+	-- For JSX/TSX HTML tags: color brackets and tag names the same (cyan here)
+	vim.api.nvim_set_hl(0, "tsxTagName", { fg = c.cyan }) -- Tag names
+	vim.api.nvim_set_hl(0, "tsxTagDelimiter", { fg = c.cyan }) -- Brackets < and >
+	vim.api.nvim_set_hl(0, "jsxTagName", { fg = c.cyan }) -- JSX tags
+	vim.api.nvim_set_hl(0, "jsxTagDelimiter", { fg = c.cyan }) -- JSX brackets
+	vim.api.nvim_set_hl(0, "htmlTag", { fg = c.cyan }) -- HTML tags
+	vim.api.nvim_set_hl(0, "htmlTagDelimiter", { fg = c.cyan }) -- HTML brackets
+
+	-- For component names (PascalCase): use magenta or another color
+	vim.api.nvim_set_hl(0, "tsxComponentName", { fg = c.magenta, bold = true })
+	vim.api.nvim_set_hl(0, "jsxComponentName", { fg = c.magenta, bold = true })
+	vim.api.nvim_set_hl(0, "typescriptTSXIdentifier", { fg = c.magenta, bold = true })
 
 	-- Transparency fix for sidebars and floating windows
 	if transparent then
