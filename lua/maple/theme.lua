@@ -22,7 +22,7 @@ maple.colors = {
 	bright_white = "#ffffff",
 
 	cursor = "#8d9db4",
-	selection = "#475569",
+	selection = "#6c7a89",
 	comment = "#999999",
 	border = "#44444b",
 }
