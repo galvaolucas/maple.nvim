@@ -29,7 +29,7 @@ function maple.setup(opts)
 	hi("LineNr", { fg = c.comment })
 	hi("CursorLineNr", { fg = c.white, bold = true })
 	hi("Comment", { fg = c.comment, italic = true })
-	hi("StatusLine", { fg = c.fg, bg = c.border })
+	hi("StatusLine", { fg = c.fg, bg = c.black })
 	hi("VertSplit", { fg = c.border })
 	hi("WinSeparator", { fg = c.border })
 
@@ -133,7 +133,6 @@ function maple.setup(opts)
 	hi("Search", { bg = c.yellow, fg = c.black })
 	hi("IncSearch", { bg = c.yellow, fg = c.black, bold = true })
 	hi("CursorLineNr", { fg = c.white, bold = true })
-	-- hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
 	hi("SnacksDashboardDesc", { fg = c.magenta })
 
 	vim.api.nvim_create_autocmd("ColorScheme", {
