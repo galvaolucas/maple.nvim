@@ -7,6 +7,14 @@ Features include:
 - Optional transparent background for seamless integration with your terminal
 - Built-in Lualine theme support
 
+<p align="center">
+  <img src="assets/maple_1.png" alt="Maple Theme Preview" />
+</p>
+
+<p align="center">
+  <img src="assets/maple_2.png" alt="Maple Theme Preview" />
+</p>
+
 ## Installation
 
 Using your plugin manager (example for lazy.nvim):
