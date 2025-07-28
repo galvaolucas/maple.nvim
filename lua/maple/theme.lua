@@ -1,31 +1,31 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#1e1e2e",
-	fg = "#cdd6f4",
-	red = "#f38ba8",
-	green = "#a6e3a1",
-	yellow = "#f9e2af",
-	blue = "#89b4fa",
-	magenta = "#cba6f7",
-	cyan = "#94e2d5",
-	white = "#ffffff",
-	black = "#181825",
-	pink = "#f5c2e7",
+	bg = "27213C",
+	fg = "#cbd5e1",
+	red = "#AD2831",
+	green = "#5DFDCB",
+	yellow = "#FFFF82",
+	blue = "#1C77C3",
+	magenta = "#C2AFF0",
+	cyan = "#a1e8e5",
+	white = "#f3f2f2",
+	black = "#333333",
+	pink = "#DF367C",
 
-	bright_black = "#313244",
-	bright_red = "#eba0ac",
-	bright_green = "#b5e8b0",
-	bright_yellow = "#f2cdcd",
-	bright_blue = "#89dceb",
-	bright_magenta = "#d0bfff",
-	bright_cyan = "#b5f4e6",
-	bright_white = "#f5f5f5",
+	bright_black = "#666666",
+	bright_red = "#ffc4c4",
+	bright_green = "#ACE894",
+	bright_yellow = "#EDDEA4",
+	bright_blue = "#DDF2EB",
+	bright_magenta = "#ebe5ff",
+	bright_cyan = "#C9F9FF",
+	bright_white = "#ffffff",
 
-	cursor = "#cba6f7",
-	selection = "#585b70",
-	comment = "#7f849c",
-	border = "#45475a",
+	cursor = "#ebe5ff",
+	selection = "#EDE6F2",
+	comment = "#61707D",
+	border = "#595358",
 }
 
 local function hi(name, opts)
@@ -79,6 +79,11 @@ function maple.setup(opts)
 	hi("DiagnosticUnderlineWarn", { fg = c.yellow, undercurl = true })
 	hi("DiagnosticUnderlineInfo", { fg = c.blue, undercurl = false })
 	hi("DiagnosticUnderlineHint", { fg = c.cyan, undercurl = false })
+
+	hi("NeoTreeNormal", { bg = c.bg })
+	hi("NeoTreeNormalNC", { bg = c.bg })
+	hi("NeoTreeEndOfBuffer", { bg = c.bg })
+	hi("NeoTreeWinSeparator", { fg = c.border, bg = c.bg })
 
 	hi("GitSignsAdd", { fg = c.green })
 	hi("GitSignsChange", { fg = c.blue })
