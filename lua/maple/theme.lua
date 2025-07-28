@@ -171,17 +171,17 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@punctuation.bracket.tsx", { fg = c.pink })
 			vim.api.nvim_set_hl(0, "@keyword.import.tsx", { fg = c.magenta })
 			vim.api.nvim_set_hl(0, "@keyword.tsx", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.typescript", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.exception.typescript", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.exception.tsx", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.operator.typescript", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.operator.tsx", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.coroutine.typescript", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.coroutine.tsx", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.conditional.typescript", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.conditional.tsx", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.return.typescript", { fg = c.magenta })
-			vim.api.nvim_set_hl(0, "@keyword.return.tsx", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "@keyword.typescript", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.exception.typescript", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.exception.tsx", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.operator.typescript", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.operator.tsx", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.coroutine.typescript", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.coroutine.tsx", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.conditional.typescript", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.conditional.tsx", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.return.typescript", { fg = c.magenta, italic = italic })
+			vim.api.nvim_set_hl(0, "@keyword.return.tsx", { fg = c.magenta, italic = italic })
 			vim.api.nvim_set_hl(0, "@lsp.type.variable.typescriptreact", { fg = c.bright_yellow })
 			vim.api.nvim_set_hl(0, "@lsp.type.parameter.typescriptreact", { fg = c.bright_yellow, underline = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = true })
@@ -193,7 +193,11 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.mod.local.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.type.namespace.typescriptreact", { fg = c.magenta, bold = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.fg, bold = false })
-			vim.api.nvim_set_hl(0, "@lsp.type.interface.typescriptreact", { fg = c.bright_yellow, bold = true })
+			vim.api.nvim_set_hl(
+				0,
+				"@lsp.type.interface.typescriptreact",
+				{ fg = c.bright_yellow, bold = true, italic = italic }
+			)
 			vim.api.nvim_set_hl(
 				0,
 				"@lsp.typemod.class.defaultLibrary.typescriptreact",
@@ -205,7 +209,7 @@ function maple.setup(opts)
 	-- Transparency fix for sidebars and floating windows
 	if transparent then
 		vim.api.nvim_create_autocmd("ColorScheme", {
-			pattern = "*",
+			pattern = "maple",
 			callback = function()
 				vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
 				vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
@@ -225,30 +229,17 @@ function maple.setup(opts)
 		})
 	end
 
-	vim.api.nvim_create_autocmd("ColorScheme", {
-		pattern = "*",
-		callback = function()
-			vim.api.nvim_set_hl(0, "Keyword", { italic = true })
-			vim.api.nvim_set_hl(0, "@keyword", { italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.function", { italic = true })
-			vim.api.nvim_set_hl(0, "@operator", { italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.exception.tsx", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.exception.typescript", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.typescript", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.operator.typescript", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.operator.tsx", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.coroutine.typescript", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.coroutine.tsx", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.conditional.typescript", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.conditional.tsx", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(0, "@keyword.return.typescript", { fg = c.magenta, italic = true })
-			vim.api.nvim_set_hl(
-				0,
-				"@lsp.type.interface.typescriptreact",
-				{ fg = c.bright_yellow, bold = true, italic = true }
-			)
-		end,
-	})
+	if italic then
+		vim.api.nvim_create_autocmd("ColorScheme", {
+			pattern = "maple",
+			callback = function()
+				vim.api.nvim_set_hl(0, "Keyword", { italic = true })
+				vim.api.nvim_set_hl(0, "@keyword", { italic = true })
+				vim.api.nvim_set_hl(0, "@keyword.function", { italic = true })
+				vim.api.nvim_set_hl(0, "@operator", { italic = true })
+			end,
+		})
+	end
 end
 
 return maple
