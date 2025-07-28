@@ -189,6 +189,8 @@ function maple.setup(opts)
 				"@lsp.typemod.class.defaultLibrary.typescriptreact",
 				{ fg = c.bright_cyan, bold = true }
 			)
+
+			vim.api.nvim_set_hl(0, "@lsp.type.property.lua", { fg = c.magenta, bold = false })
 		end,
 	})
 

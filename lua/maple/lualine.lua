@@ -10,7 +10,7 @@ local colors = {
 
 local maple_theme = {
 	normal = {
-		a = { fg = colors.black, bg = colors.violet, gui = "bold" },
+		a = { fg = maple.colors.black, bg = colors.violet, gui = "bold" },
 		b = { fg = colors.white, bg = colors.black },
 		c = { fg = colors.white },
 	},
