@@ -37,22 +37,12 @@ function maple.setup(opts)
 	local transparent = opts.transparent or false
 	local italic = opts.italic or false
 	local c = maple.colors
-	local function set_sidebar_bg(bg)
-		hi("NeoTreeNormal", { bg = bg })
-		hi("NeoTreeNormalNC", { bg = bg })
-		hi("NvimTreeNormal", { bg = bg })
-		hi("NvimTreeNormalNC", { bg = bg })
-		hi("NeoTreeEndOfBuffer", { bg = bg })
-		hi("NvimTreeEndOfBuffer", { bg = bg })
-	end
 
 	if transparent then
 		c.bg = "NONE"
 		c.border = "NONE"
 		c.selection = "#333333"
 	end
-
-	set_sidebar_bg(c.bg)
 
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then
@@ -235,20 +225,20 @@ function maple.setup(opts)
 		vim.api.nvim_create_autocmd("ColorScheme", {
 			pattern = "maple",
 			callback = function()
-				vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "NONE", bg = "NONE" })
+				vim.api.nvim_set_hl(0, "Normal", { bg = c.bg })
+				vim.api.nvim_set_hl(0, "NormalNC", { bg = c.bg })
+				vim.api.nvim_set_hl(0, "NormalFloat", { bg = c.bg })
+				vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "NONE", bg = c.bg })
 
 				-- Sidebars
-				vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE" })
+				vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = c.bg })
+				vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = c.bg })
+				vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = c.bg })
+				vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = c.bg })
 
 				-- Telescope
-				vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "NONE" })
+				vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = c.bg })
+				vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = c.bg })
 			end,
 		})
 	end
