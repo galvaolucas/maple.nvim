@@ -2,7 +2,7 @@ local maple = require("maple.pallete")
 local colors = {
 	blue = maple.colors.blue,
 	cyan = maple.colors.cyan,
-	black = maple.colors.black,
+	black = maple.colors.bright_black,
 	white = maple.colors.white,
 	red = maple.colors.red,
 	violet = maple.colors.magenta,
@@ -39,18 +39,9 @@ require("lualine").setup({
 			{ "diagnostics" },
 			{ "diff" },
 			"%=", -- center alignment
-			{ "filesize" },
 		},
 		lualine_x = {
-			{
-				function()
-					return vim.b.blamer_virtual_text or ""
-				end,
-				cond = function()
-					return vim.b.blamer_virtual_text ~= nil
-				end,
-				color = { fg = "#61707D", gui = "italic" },
-			},
+			{ "filesize" },
 		},
 		lualine_y = { "filetype", "progress" },
 		lualine_z = {
