@@ -1,7 +1,7 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#031926",
+	bg = "#040F16",
 	fg = "#cbd5e1",
 	red = "#AD2831",
 	green = "#BDE4A8",
@@ -220,28 +220,25 @@ function maple.setup(opts)
 		end,
 	})
 
-	-- Transparency fix for sidebars and floating windows
-	if transparent then
-		vim.api.nvim_create_autocmd("ColorScheme", {
-			pattern = "maple",
-			callback = function()
-				vim.api.nvim_set_hl(0, "Normal", { bg = c.bg })
-				vim.api.nvim_set_hl(0, "NormalNC", { bg = c.bg })
-				vim.api.nvim_set_hl(0, "NormalFloat", { bg = c.bg })
-				vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "NONE", bg = c.bg })
+	vim.api.nvim_create_autocmd("ColorScheme", {
+		pattern = "maple",
+		callback = function()
+			vim.api.nvim_set_hl(0, "Normal", { bg = c.bg })
+			vim.api.nvim_set_hl(0, "NormalNC", { bg = c.bg })
+			vim.api.nvim_set_hl(0, "NormalFloat", { bg = c.bg })
+			vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "NONE", bg = c.bg })
 
-				-- Sidebars
-				vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = c.bg })
-				vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = c.bg })
-				vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = c.bg })
-				vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = c.bg })
+			-- Sidebars
+			vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = c.bg })
+			vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = c.bg })
+			vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = c.bg })
+			vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = c.bg })
 
-				-- Telescope
-				vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = c.bg })
-				vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = c.bg })
-			end,
-		})
-	end
+			-- Telescope
+			vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = c.bg })
+			vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = c.bg })
+		end,
+	})
 
 	if italic then
 		vim.api.nvim_create_autocmd("ColorScheme", {
