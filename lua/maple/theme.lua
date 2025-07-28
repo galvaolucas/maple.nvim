@@ -11,7 +11,8 @@ maple.colors = {
 	cyan = "#9FFFF5",
 	white = "#F0F4EF",
 	black = "#333333",
-	pink = "#DF367C",
+	pink = "#FF88DC",
+	columbia_blue = "#B8D0EB",
 
 	bright_black = "#666666",
 	bright_red = "#ffc4c4",
@@ -181,7 +182,7 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.bright_red })
 			vim.api.nvim_set_hl(0, "@operator.tsx", { fg = c.bright_blue })
 			vim.api.nvim_set_hl(0, "@_jsx_attribute.tsx", { fg = c.bright_yellow })
-			vim.api.nvim_set_hl(0, "@punctuation.bracket.tsx", { fg = c.pink })
+			vim.api.nvim_set_hl(0, "@punctuation.bracket.tsx", { fg = c.columbia_blue })
 			vim.api.nvim_set_hl(0, "@keyword.import.tsx", { fg = c.magenta })
 			vim.api.nvim_set_hl(0, "@keyword.tsx", { fg = c.magenta })
 			vim.api.nvim_set_hl(0, "@keyword.typescript", { fg = c.magenta, italic = italic })
