@@ -10,7 +10,7 @@ maple.colors = {
 	magenta = "#C2AFF0",
 	cyan = "#9FFFF5",
 	white = "#FBFBFB",
-	black = "#333333",
+	black = "#0F1108",
 	pink = "#FF88DC",
 	columbia_blue = "#B8D0EB",
 

@@ -6,12 +6,12 @@ local colors = {
 	white = maple.colors.white,
 	red = maple.colors.red,
 	violet = maple.colors.magenta,
-	grey = maple.colors.bright_black,
+	grey = "#4C6085",
 }
 
 local bubbles_theme = {
 	normal = {
-		a = { fg = colors.black, bg = colors.violet },
+		a = { fg = colors.black, bg = colors.violet, gui = "bold" },
 		b = { fg = colors.white, bg = colors.grey },
 		c = { fg = colors.white },
 	},
@@ -21,7 +21,7 @@ local bubbles_theme = {
 	replace = { a = { fg = colors.black, bg = colors.red } },
 
 	inactive = {
-		a = { fg = colors.white, bg = colors.black },
+		a = { fg = colors.white, bg = colors.black, gui = "bold" },
 		b = { fg = colors.white, bg = colors.black },
 		c = { fg = colors.white },
 	},
