@@ -6,13 +6,12 @@ local colors = {
 	white = maple.colors.white,
 	red = maple.colors.red,
 	violet = maple.colors.magenta,
-	grey = "#4C6085",
 }
 
-local bubbles_theme = {
+local maple_theme = {
 	normal = {
 		a = { fg = colors.black, bg = colors.violet, gui = "bold" },
-		b = { fg = colors.white, bg = colors.grey },
+		b = { fg = colors.white, bg = colors.black },
 		c = { fg = colors.white },
 	},
 
@@ -29,7 +28,7 @@ local bubbles_theme = {
 
 require("lualine").setup({
 	options = {
-		theme = bubbles_theme,
+		theme = maple_theme,
 		component_separators = "",
 		section_separators = { left = "", right = "" },
 	},
@@ -37,7 +36,10 @@ require("lualine").setup({
 		lualine_a = { { "mode", separator = { left = "" }, right_padding = 2 } },
 		lualine_b = { "filename", "branch" },
 		lualine_c = {
-			"%=", --[[ add your center components here in place of this comment ]]
+			{ "diagnostics" },
+			{ "diff" },
+			"%=", -- center alignment
+			{ "filesize" },
 		},
 		lualine_x = {},
 		lualine_y = { "filetype", "progress" },
