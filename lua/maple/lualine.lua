@@ -1,21 +1,10 @@
-local colors = {
-	bg = "#1e1e1f",
-	fg = "#cbd5e1",
-	red = "#edabab",
-	green = "#a4dfae",
-	yellow = "#eecfa0",
-	blue = "#8fc7ff",
-	magenta = "#d2ccff",
-	cyan = "#a1e8e5",
-	white = "#f3f2f2",
-	black = "#333333",
-	grey = "#44444b",
-}
+local maple = require("maple.pallete")
+local colors = maple.colors
 
 local theme = {
 	normal = {
 		a = { fg = colors.black, bg = colors.magenta, gui = "bold" },
-		b = { fg = colors.fg, bg = colors.grey },
+		b = { fg = colors.fg, bg = colors.columbia_blue },
 		c = { fg = colors.fg, bg = colors.bg },
 	},
 	insert = {
