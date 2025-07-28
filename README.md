@@ -31,7 +31,7 @@ Using your plugin manager (example for lazy.nvim):
 Then in your init.lua:
 
 ```
-    vim.cmd("colorscheme maple")
+vim.cmd("colorscheme maple")
 ```
 
 If you wanna also use the lualine theme:
@@ -46,4 +46,4 @@ The theme also supports transparency and italic. To enable, just pass the proper
 require("colors.maple").setup({ transparency = true, italic = true })
 ```
 
-Feel free to open issues or PRs!
+Feel free to open issues or PR's!
