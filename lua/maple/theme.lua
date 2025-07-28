@@ -1,7 +1,7 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#27213C",
+	bg = "#031926",
 	fg = "#cbd5e1",
 	red = "#AD2831",
 	green = "#BDE4A8",
@@ -37,12 +37,22 @@ function maple.setup(opts)
 	local transparent = opts.transparent or false
 	local italic = opts.italic or false
 	local c = maple.colors
+	local function set_sidebar_bg(bg)
+		hi("NeoTreeNormal", { bg = bg })
+		hi("NeoTreeNormalNC", { bg = bg })
+		hi("NvimTreeNormal", { bg = bg })
+		hi("NvimTreeNormalNC", { bg = bg })
+		hi("NeoTreeEndOfBuffer", { bg = bg })
+		hi("NvimTreeEndOfBuffer", { bg = bg })
+	end
 
 	if transparent then
 		c.bg = "NONE"
 		c.border = "NONE"
 		c.selection = "#333333"
 	end
+
+	set_sidebar_bg(c.bg)
 
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then
