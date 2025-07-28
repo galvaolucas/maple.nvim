@@ -193,11 +193,7 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.mod.local.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.type.namespace.typescriptreact", { fg = c.magenta, bold = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.fg, bold = false })
-			vim.api.nvim_set_hl(
-				0,
-				"@lsp.type.interface.typescriptreact",
-				{ fg = c.bright_yellow, bold = true, italic = true }
-			)
+			vim.api.nvim_set_hl(0, "@lsp.type.interface.typescriptreact", { fg = c.bright_yellow, bold = true })
 			vim.api.nvim_set_hl(
 				0,
 				"@lsp.typemod.class.defaultLibrary.typescriptreact",
@@ -209,7 +205,7 @@ function maple.setup(opts)
 	-- Transparency fix for sidebars and floating windows
 	if transparent then
 		vim.api.nvim_create_autocmd("ColorScheme", {
-			pattern = "maple",
+			pattern = "*",
 			callback = function()
 				vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
 				vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
@@ -231,7 +227,7 @@ function maple.setup(opts)
 
 	if italic then
 		vim.api.nvim_create_autocmd("ColorScheme", {
-			pattern = "maple",
+			pattern = "*",
 			callback = function()
 				vim.api.nvim_set_hl(0, "Keyword", { italic = true })
 				vim.api.nvim_set_hl(0, "@keyword", { italic = true })
@@ -247,6 +243,11 @@ function maple.setup(opts)
 				vim.api.nvim_set_hl(0, "@keyword.conditional.typescript", { fg = c.magenta, italic = true })
 				vim.api.nvim_set_hl(0, "@keyword.conditional.tsx", { fg = c.magenta, italic = true })
 				vim.api.nvim_set_hl(0, "@keyword.return.typescript", { fg = c.magenta, italic = true })
+				vim.api.nvim_set_hl(
+					0,
+					"@lsp.type.interface.typescriptreact",
+					{ fg = c.bright_yellow, bold = true, italic = true }
+				)
 			end,
 		})
 	end
