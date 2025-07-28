@@ -1,16 +1,12 @@
--- Bubbles config for lualine
--- Author: lokesh-krishna
--- MIT license, see LICENSE for more details.
-
--- stylua: ignore
+local maple = require("maple.pallete")
 local colors = {
-  blue   = '#80a0ff',
-  cyan   = '#79dac8',
-  black  = '#080808',
-  white  = '#c6c6c6',
-  red    = '#ff5189',
-  violet = '#d183e8',
-  grey   = '#303030',
+	blue = maple.colors.blue,
+	cyan = maple.colors.cyan,
+	black = maple.colors.black,
+	white = maple.colors.white,
+	red = maple.colors.red,
+	violet = maple.colors.magenta,
+	grey = maple.colors.bright_black,
 }
 
 local bubbles_theme = {
