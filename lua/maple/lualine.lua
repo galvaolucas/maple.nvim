@@ -55,7 +55,7 @@ local section_separators
 if transparent then
 	section_separators = { left = "|", right = "|" }
 else
-	section_separators = { left = "", right = "" }
+	section_separators = { left = "", right = "" }
 end
 
 require("lualine").setup({
@@ -65,19 +65,18 @@ require("lualine").setup({
 		section_separators = section_separators,
 	},
 	sections = {
-		lualine_a = { { "mode", separator = { left = section_separators.left }, right_padding = 2 } },
+		lualine_a = { { "mode", separator = { left = section_separators.right }, right_padding = 2 } },
 		lualine_b = { "filename", "branch" },
 		lualine_c = {
 			{ "diagnostics" },
-			{ "diff" },
 			"%=", -- center alignment
 		},
 		lualine_x = {
-			{ "filesize" },
+			{ "diff", "filesize" },
 		},
 		lualine_y = { "filetype", "progress" },
 		lualine_z = {
-			{ "location", separator = { right = section_separators.right }, left_padding = 2 },
+			{ "location", separator = { right = section_separators.left }, left_padding = 2 },
 		},
 	},
 	inactive_sections = {
