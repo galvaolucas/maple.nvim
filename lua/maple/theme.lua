@@ -23,7 +23,7 @@ maple.colors = {
 	bright_white = "#FDFFFC",
 
 	cursor = "#ebe5ff",
-	selection = "#EDE6F2",
+	selection = "#2A4849",
 	comment = "#61707D",
 	border = "#E2AFDE",
 }
@@ -84,6 +84,9 @@ function maple.setup(opts)
 	hi("NvimTreeNormalNC", { bg = c.bg })
 	hi("NvimTreeEndOfBuffer", { bg = c.bg })
 	hi("NvimTreeVertSplit", { fg = c.border, bg = c.bg })
+
+	hi("NvimTreeDirectoryName", { fg = c.magenta })
+	hi("NvimTreeDirectoryIcon", { fg = c.magenta })
 
 	hi("GitSignsAdd", { fg = c.green })
 	hi("GitSignsChange", { fg = c.blue })
