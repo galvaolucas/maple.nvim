@@ -41,7 +41,17 @@ require("lualine").setup({
 			"%=", -- center alignment
 			{ "filesize" },
 		},
-		lualine_x = {},
+		lualine_x = {
+			{
+				function()
+					return vim.b.blamer_virtual_text or ""
+				end,
+				cond = function()
+					return vim.b.blamer_virtual_text ~= nil
+				end,
+				color = { fg = "#61707D", gui = "italic" },
+			},
+		},
 		lualine_y = { "filetype", "progress" },
 		lualine_z = {
 			{ "location", separator = { right = "" }, left_padding = 2 },
