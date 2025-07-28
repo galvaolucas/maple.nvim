@@ -44,7 +44,7 @@ function maple.setup(opts)
 	hi("Constant", { fg = c.cyan })
 
 	hi("DiagnosticError", { fg = c.red, undercurl = false })
-	hi("DiagnosticWarn", { fg = c.yellow, undercurl = false })
+	hi("DiagnosticWarn", { fg = c.columbia_blue, undercurl = false })
 	hi("DiagnosticInfo", { fg = c.blue, undercurl = false })
 	hi("DiagnosticHint", { fg = c.cyan, undercurl = false })
 	hi("DiagnosticUnderlineError", { fg = c.red, undercurl = true })
@@ -173,6 +173,15 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.mod.local.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.type.namespace.typescriptreact", { fg = c.magenta, bold = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.bright_white, bold = false })
+			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescript", { fg = c.bright_blue, bold = false })
+			vim.api.nvim_set_hl(0, "@lsp.type.class.typescript", { fg = c.bright_white, bold = false })
+
+			vim.api.nvim_set_hl(
+				0,
+				"@lsp.typemod.parameter.declaration.typescript",
+				{ fg = c.bright_white, bold = false }
+			)
+
 			vim.api.nvim_set_hl(
 				0,
 				"@lsp.typemod.property.declaration.typescriptreact",
