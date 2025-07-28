@@ -15,7 +15,7 @@ maple.colors = {
 
 	bright_black = "#666666",
 	bright_red = "#ffc4c4",
-	bright_green = "#bdf8c7",
+	bright_green = "#dbf195",
 	bright_yellow = "#ffe8b9",
 	bright_blue = "#a8e0ff",
 	bright_magenta = "#ebe5ff",
@@ -153,11 +153,10 @@ function maple.setup(opts)
 	hi("CursorLineNr", { fg = c.white, bold = true })
 	hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
 
-	-- For JSX/TSX HTML tags: color brackets and tag names the same (cyan here)
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		pattern = "*",
 		callback = function()
-			vim.api.nvim_set_hl(0, "@type.builtin.tsx", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "@type.builtin.tsx", { fg = c.magenta, bold = true })
 			vim.api.nvim_set_hl(0, "@tag.builtin.tsx", { fg = c.bright_red })
 			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_yellow })
 			vim.api.nvim_set_hl(0, "@tag.tsx", { fg = c.bright_blue, bold = false })
@@ -173,13 +172,35 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@keyword.tsx", { fg = c.magenta })
 			vim.api.nvim_set_hl(0, "@keyword.typescript", { fg = c.magenta, italic = true })
 			vim.api.nvim_set_hl(0, "@keyword.exception.typescript", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.exception.tsx", { fg = c.magenta, italic = true })
 			vim.api.nvim_set_hl(0, "@keyword.operator.typescript", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.operator.tsx", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.coroutine.typescript", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.coroutine.tsx", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.conditional.typescript", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.conditional.tsx", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.return.typescript", { fg = c.magenta, italic = true })
+			vim.api.nvim_set_hl(0, "@keyword.return.tsx", { fg = c.magenta, italic = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.variable.typescriptreact", { fg = c.bright_yellow })
-			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = true })
+			vim.api.nvim_set_hl(0, "@lsp.type.parameter.typescriptreact", { fg = c.bright_yellow, underline = true })
+			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@variable.typescript", { fg = c.bright_yellow, bold = false })
+			vim.api.nvim_set_hl(0, "@variable.parameter.tsx", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@constructor.typescript", { fg = c.bright_blue, bold = true })
-			vim.api.nvim_set_hl(0, "@lsp.mod.defaultLibrary.typescript", { fg = c.bright_blue, bold = true })
-			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescript", { fg = c.bright_yellow, bold = true })
+			vim.api.nvim_set_hl(0, "@lsp.mod.defaultLibrary.typescript", { fg = c.bright_green, bold = false })
+			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescript", { fg = c.bright_yellow, bold = false })
+			vim.api.nvim_set_hl(0, "@lsp.mod.local.typescript", { fg = c.bright_yellow, bold = false })
+			vim.api.nvim_set_hl(0, "@lsp.type.namespace.typescriptreact", { fg = c.magenta, bold = true })
+			vim.api.nvim_set_hl(
+				0,
+				"@lsp.type.interface.typescriptreact",
+				{ fg = c.bright_yellow, bold = true, italic = true }
+			)
+			vim.api.nvim_set_hl(
+				0,
+				"@lsp.typemod.class.defaultLibrary.typescriptreact",
+				{ fg = c.bright_cyan, bold = true }
+			)
 		end,
 	})
 
