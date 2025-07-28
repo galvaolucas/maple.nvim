@@ -1,15 +1,15 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#040F16",
-	fg = "#cbd5e1",
+	bg = "#090302",
+	fg = "#F0EFF4",
 	red = "#DA5552",
 	green = "#BDE4A8",
 	yellow = "#FFFF82",
 	blue = "#89BBFE",
 	magenta = "#C2AFF0",
-	cyan = "#a1e8e5",
-	white = "#f3f2f2",
+	cyan = "#9FFFF5",
+	white = "#F0F4EF",
 	black = "#333333",
 	pink = "#DF367C",
 
@@ -25,7 +25,7 @@ maple.colors = {
 	cursor = "#ebe5ff",
 	selection = "#2E294E",
 	comment = "#61707D",
-	border = "#E2AFDE",
+	border = "#4F4789",
 }
 
 local function hi(name, opts)
