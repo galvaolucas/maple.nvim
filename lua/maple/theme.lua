@@ -3,7 +3,7 @@ local maple = {}
 maple.colors = {
 	bg = "#040F16",
 	fg = "#cbd5e1",
-	red = "#AD2831",
+	red = "#DA5552",
 	green = "#BDE4A8",
 	yellow = "#FFFF82",
 	blue = "#89BBFE",
@@ -20,12 +20,12 @@ maple.colors = {
 	bright_blue = "#A2D6F9",
 	bright_magenta = "#ebe5ff",
 	bright_cyan = "#C9F9FF",
-	bright_white = "#ffffff",
+	bright_white = "#FDFFFC",
 
 	cursor = "#ebe5ff",
 	selection = "#EDE6F2",
 	comment = "#61707D",
-	border = "#595358",
+	border = "#E2AFDE",
 }
 
 local function hi(name, opts)
@@ -169,6 +169,7 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@spell.tsx", { fg = c.white, bold = false })
 			vim.api.nvim_set_hl(0, "@number.tsx", { fg = c.bright_green, bold = false })
 			vim.api.nvim_set_hl(0, "@type.tsx", { fg = c.bright_yellow, bold = false })
+			vim.api.nvim_set_hl(0, "@boolean.tsx", { fg = c.magenta, bold = true })
 			vim.api.nvim_set_hl(0, "@_jsx_element", { fg = c.cyan, bold = false })
 			vim.api.nvim_set_hl(0, "@_jsx_element.tsx", { fg = c.bright_red, bold = false })
 			vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = c.bright_blue })
