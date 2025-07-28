@@ -1,7 +1,7 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#090302",
+	bg = "#5A5766",
 	fg = "#F0EFF4",
 	red = "#DA5552",
 	green = "#BDE4A8",
@@ -17,7 +17,7 @@ maple.colors = {
 	bright_black = "#666666",
 	bright_red = "#ffc4c4",
 	bright_green = "#D7F2BA",
-	bright_yellow = "#EDDEA4",
+	bright_yellow = "#F5EE9E",
 	bright_blue = "#A2D6F9",
 	bright_magenta = "#ebe5ff",
 	bright_cyan = "#C9F9FF",
