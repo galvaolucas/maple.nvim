@@ -14,7 +14,7 @@ maple.colors = {
 	pink = "#FF88DC",
 	columbia_blue = "#B8D0EB",
 
-	bright_black = "#160f29",
+	bright_black = "#1C2321",
 	bright_red = "#ffc4c4",
 	bright_green = "#D7F2BA",
 	bright_yellow = "#F5EE9E",
