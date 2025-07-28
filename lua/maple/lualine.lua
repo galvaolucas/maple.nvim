@@ -4,7 +4,7 @@ local colors = maple.colors
 local theme = {
 	normal = {
 		a = { fg = colors.black, bg = colors.magenta, gui = "bold" },
-		b = { fg = colors.bright_yellow, bg = colors.black },
+		b = { fg = colors.bright_white, bg = colors.black },
 		c = { fg = colors.fg, bg = colors.bg },
 	},
 	insert = {
