@@ -23,7 +23,7 @@ maple.colors = {
 	bright_white = "#FDFFFC",
 
 	cursor = "#ebe5ff",
-	selection = "#2A4849",
+	selection = "#2E294E",
 	comment = "#61707D",
 	border = "#E2AFDE",
 }
@@ -87,6 +87,8 @@ function maple.setup(opts)
 
 	hi("NvimTreeDirectoryName", { fg = c.magenta })
 	hi("NvimTreeDirectoryIcon", { fg = c.magenta })
+	hi("NeoTreeDirectoryIcon", { fg = c.magenta })
+	hi("NeoTreeDirectoryIcon", { fg = c.magenta })
 
 	hi("GitSignsAdd", { fg = c.green })
 	hi("GitSignsChange", { fg = c.blue })
@@ -241,6 +243,11 @@ function maple.setup(opts)
 			-- Telescope
 			vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = c.bg })
 			vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = c.bg })
+
+			vim.api.nvim_set_hl(0, "NvimTreeDirectoryName", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "NvimTreeDirectoryIcon", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "NeoTreeDirectoryName", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "NeoTreeDirectoryIcon", { fg = c.magenta })
 		end,
 	})
 
