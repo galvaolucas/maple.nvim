@@ -133,7 +133,7 @@ function maple.setup(opts)
 	hi("Search", { bg = c.yellow, fg = c.black })
 	hi("IncSearch", { bg = c.yellow, fg = c.black, bold = true })
 	hi("CursorLineNr", { fg = c.white, bold = true })
-	hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
+	-- hi("LualineInsertA", { fg = c.white, bg = c.magenta, bold = true })
 	hi("SnacksDashboardDesc", { fg = c.magenta })
 
 	vim.api.nvim_create_autocmd("ColorScheme", {
