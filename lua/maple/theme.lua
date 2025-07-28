@@ -161,6 +161,8 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@tag.builtin.tsx", { fg = c.bright_red })
 			vim.api.nvim_set_hl(0, "@tag", { fg = c.bright_yellow })
 			vim.api.nvim_set_hl(0, "@tag.tsx", { fg = c.bright_blue, bold = false })
+			vim.api.nvim_set_hl(0, "@spell.tsx", { fg = c.white, bold = false })
+			vim.api.nvim_set_hl(0, "@number.tsx", { fg = c.bright_green, bold = false })
 			vim.api.nvim_set_hl(0, "@type.tsx", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@_jsx_element", { fg = c.cyan, bold = false })
 			vim.api.nvim_set_hl(0, "@_jsx_element.tsx", { fg = c.bright_red, bold = false })
@@ -185,6 +187,7 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.type.variable.typescriptreact", { fg = c.bright_yellow })
 			vim.api.nvim_set_hl(0, "@lsp.type.parameter.typescriptreact", { fg = c.bright_yellow, underline = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = true })
+			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.bright_white, bold = false })
 			vim.api.nvim_set_hl(0, "@variable.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@variable.parameter.tsx", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@constructor.typescript", { fg = c.bright_blue, bold = true })
@@ -192,7 +195,13 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.mod.local.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.type.namespace.typescriptreact", { fg = c.magenta, bold = true })
-			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.fg, bold = false })
+			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.bright_white, bold = false })
+			vim.api.nvim_set_hl(
+				0,
+				"@lsp.typemod.property.declaration.typescriptreact",
+				{ fg = c.bright_white, bold = false }
+			)
+
 			vim.api.nvim_set_hl(
 				0,
 				"@lsp.type.interface.typescriptreact",
