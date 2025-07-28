@@ -183,7 +183,7 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@keyword.return.tsx", { fg = c.magenta, italic = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.variable.typescriptreact", { fg = c.bright_yellow })
 			vim.api.nvim_set_hl(0, "@lsp.type.parameter.typescriptreact", { fg = c.bright_yellow, underline = true })
-			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = false })
+			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = true })
 			vim.api.nvim_set_hl(0, "@variable.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@variable.parameter.tsx", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@constructor.typescript", { fg = c.bright_blue, bold = true })
@@ -191,6 +191,7 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.mod.local.typescript", { fg = c.bright_yellow, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.type.namespace.typescriptreact", { fg = c.magenta, bold = true })
+			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.fg, bold = false })
 			vim.api.nvim_set_hl(
 				0,
 				"@lsp.type.interface.typescriptreact",
