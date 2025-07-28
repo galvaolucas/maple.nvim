@@ -4,9 +4,9 @@ maple.colors = {
 	bg = "#27213C",
 	fg = "#cbd5e1",
 	red = "#AD2831",
-	green = "#5DFDCB",
+	green = "#BDE4A8",
 	yellow = "#FFFF82",
-	blue = "#1C77C3",
+	blue = "#89BBFE",
 	magenta = "#C2AFF0",
 	cyan = "#a1e8e5",
 	white = "#f3f2f2",
@@ -15,9 +15,9 @@ maple.colors = {
 
 	bright_black = "#666666",
 	bright_red = "#ffc4c4",
-	bright_green = "#ACE894",
+	bright_green = "#D7F2BA",
 	bright_yellow = "#EDDEA4",
-	bright_blue = "#DDF2EB",
+	bright_blue = "#A2D6F9",
 	bright_magenta = "#ebe5ff",
 	bright_cyan = "#C9F9FF",
 	bright_white = "#ffffff",
@@ -80,10 +80,10 @@ function maple.setup(opts)
 	hi("DiagnosticUnderlineInfo", { fg = c.blue, undercurl = false })
 	hi("DiagnosticUnderlineHint", { fg = c.cyan, undercurl = false })
 
-	hi("NeoTreeNormal", { bg = c.bg })
-	hi("NeoTreeNormalNC", { bg = c.bg })
-	hi("NeoTreeEndOfBuffer", { bg = c.bg })
-	hi("NeoTreeWinSeparator", { fg = c.border, bg = c.bg })
+	hi("NvimTreeNormal", { bg = c.bg })
+	hi("NvimTreeNormalNC", { bg = c.bg })
+	hi("NvimTreeEndOfBuffer", { bg = c.bg })
+	hi("NvimTreeVertSplit", { fg = c.border, bg = c.bg })
 
 	hi("GitSignsAdd", { fg = c.green })
 	hi("GitSignsChange", { fg = c.blue })
