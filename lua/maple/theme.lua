@@ -47,7 +47,7 @@ function maple.setup(opts, c)
 	hi("DiagnosticInfo", { fg = c.blue, undercurl = false })
 	hi("DiagnosticHint", { fg = c.cyan, undercurl = false })
 	hi("DiagnosticUnderlineError", { fg = c.red, undercurl = true })
-	hi("DiagnosticUnderlineWarn", { fg = c.yellow, undercurl = true })
+	hi("DiagnosticUnderlineWarn", { fg = c.bright_yellow, undercurl = true })
 	hi("DiagnosticUnderlineInfo", { fg = c.blue, undercurl = false })
 	hi("DiagnosticUnderlineHint", { fg = c.cyan, undercurl = false })
 
