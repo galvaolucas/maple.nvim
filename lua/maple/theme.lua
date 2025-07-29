@@ -1,4 +1,4 @@
-local maple = require("maple.pallete")
+local maple = require("maple.palette")
 
 local function hi(name, opts)
 	vim.api.nvim_set_hl(0, name, opts)
