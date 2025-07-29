@@ -1,34 +1,34 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#0B0C10", -- dark velvet
-	fg = "#EAEAEA", -- old paper parchment
+	bg = "#1E1F23", -- soft charcoal
+	fg = "#E6E6E6", -- ash mist
 
-	red = "#E27D60", -- warm coral
-	green = "#A3D9A5", -- soft sage
-	yellow = "#FFE9A3", -- candlelight
-	blue = "#84C5F4", -- alpine sky
-	magenta = "#D7A9E3", -- lilac bloom
-	cyan = "#A6F2E7", -- mint mist
-	white = "#FAFAFA", -- silk veil
-	black = "#1A1B1E", -- graphite shadow
-	pink = "#FFB3D1", -- rose petal
-	columbia_blue = "#C2DFFF", -- cloudwashed sky
+	red = "#DE6E6A", -- blush ember
+	green = "#B4E7A0", -- pastel sprout
+	yellow = "#FFF0A5", -- vanilla cream
+	blue = "#96C9F5", -- sky dew
+	magenta = "#E4B0F8", -- petal mist
+	cyan = "#B2F2EF", -- mint glacier
+	white = "#FAFAFA", -- linen frost
+	black = "#2B2D30", -- obsidian
+	pink = "#FFAACD", -- rose breeze
+	columbia_blue = "#D1E7FF", -- winter haze
 
-	bright_black = "#2A2D34", -- smoky ink
-	bright_red = "#FF9999", -- cherry cream
-	bright_green = "#C3F6C6", -- tea leaf
-	bright_yellow = "#FFF5B7", -- morning sun
-	bright_blue = "#A8DCFF", -- glacier
-	bright_magenta = "#F0D7FF", -- soft orchid
-	bright_cyan = "#D4FFFA", -- polar ice
-	bright_white = "#FFFFFF", -- pristine linen
+	bright_black = "#3A3C42", -- inkstone
+	bright_red = "#FFA3A3", -- cherry chiffon
+	bright_green = "#D0F9C7", -- meadow veil
+	bright_yellow = "#FFF7BF", -- honey pearl
+	bright_blue = "#BCE2FF", -- arctic sky
+	bright_magenta = "#F5E0FF", -- orchid glow
+	bright_cyan = "#DFFFFD", -- snow mint
+	bright_white = "#FFFFFF", -- morning fog
 
-	cursor = "#F0D7FF", -- soft glow
-	selection = "#3C3756", -- moonlight ink
-	comment = "#7A8C98", -- soft graphite
-	border = "#5B537E", -- antique plum
-	status_line = "#2C2C2E", -- iron edge
+	cursor = "#F5E0FF", -- soft glow
+	selection = "#45445C", -- graphite haze
+	comment = "#7F8B97", -- faded ink
+	border = "#67648E", -- velvet frame
+	status_line = "#3C3C3E", -- slate steel
 }
 
 return maple
