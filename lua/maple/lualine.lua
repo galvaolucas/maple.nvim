@@ -1,15 +1,15 @@
 local maple = require("maple")
-local pallete = require("maple.palette")
+local colors = maple.colors or {}
 
 local colors = {
-	blue = pallete.colors.blue,
-	cyan = pallete.colors.cyan,
-	black = pallete.colors.bright_black,
-	white = pallete.colors.white,
-	red = pallete.colors.red,
-	violet = pallete.colors.magenta,
-	bright_magenta = pallete.colors.bright_magenta,
-	brown = pallete.colors.brown,
+	blue = colors.blue,
+	cyan = colors.cyan,
+	black = colors.bright_black,
+	white = colors.white,
+	red = colors.red,
+	violet = colors.magenta,
+	bright_magenta = colors.bright_magenta,
+	brown = colors.brown,
 }
 
 local function clock()
