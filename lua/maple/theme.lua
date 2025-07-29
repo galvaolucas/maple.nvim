@@ -4,11 +4,10 @@ local function hi(name, opts)
 	vim.api.nvim_set_hl(0, name, opts)
 end
 
-function maple.setup(opts)
+function maple.setup(opts, c)
 	opts = opts or {}
 	local transparent = opts.transparent or false
 	local italic = opts.italic or false
-	local c = maple.colors(opts.theme)
 
 	if transparent then
 		c.bg = "NONE"

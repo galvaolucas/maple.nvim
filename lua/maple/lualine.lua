@@ -1,15 +1,15 @@
 local maple = require("maple")
-local colors = maple.colors or {}
+local theme = maple.colors(maple.opts.theme)
 
 local colors = {
-	blue = colors.blue,
-	cyan = colors.cyan,
-	black = colors.bright_black,
-	white = colors.white,
-	red = colors.red,
-	violet = colors.magenta,
-	bright_magenta = colors.bright_magenta,
-	brown = colors.brown,
+	blue = theme.colors.blue,
+	cyan = theme.colors.cyan,
+	black = theme.colors.bright_black,
+	white = theme.colors.white,
+	red = theme.colors.red,
+	violet = theme.colors.magenta,
+	bright_magenta = theme.colors.bright_magenta,
+	brown = theme.colors.brown,
 }
 
 local function clock()

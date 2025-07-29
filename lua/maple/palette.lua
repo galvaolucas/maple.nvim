@@ -75,6 +75,4 @@ function maple.colors(theme)
 end
 
 -- Apply the colors immediately using current opts
-maple.colors = maple.colors(maple.opts.theme)
-
 return maple

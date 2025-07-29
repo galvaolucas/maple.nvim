@@ -3,7 +3,7 @@
 local M = {}
 
 function M.setup(opts)
-	require("maple.theme").setup(opts or {})
+	require("maple.theme").setup(opts or {}, require("maple.palette").colors(opts.theme or "autumn"))
 end
 
 return M
