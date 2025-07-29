@@ -1,35 +1,37 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#2D1E2F", -- background (deep plum-black)
-	fg = "#F5F2EF", -- foreground (creamy off-white)
+	bg = "#1C1C1A", -- very dark earthy base
+	fg = "#EDE8DC", -- soft parchment cream (not white)
 
-	red = "#F72C25", -- intense sorbet red
-	orange = "#F7B32B", -- golden peach
-	yellow = "#FCF6B1", -- banana cream
-	green = "#A9E5BB", -- mint sorbet
-	blue = "#A1D5FF", -- added: soft pastel blue
-	magenta = "#DEB1F4", -- added: soft lavender
-	cyan = "#B2F2EF", -- added: mint glacier
-	pink = "#FFB2D3", -- added: rose breeze
+	red = "#A4243B", -- deep wine red
+	orange = "#BD632F", -- warm terracotta
+	yellow = "#D8973C", -- golden honey
+	green = "#A4B97F", -- added: olive pistachio for soft greens
+	blue = "#6C9AAB", -- added: dusty slate blue
+	magenta = "#CBA1C1", -- added: muted rose-lavender
+	cyan = "#78AFA4", -- added: jade slate
+	pink = "#D8A1A1", -- added: gentle rose
 
-	black = "#1C121D", -- darkest tone
-	white = "#FFFFFF", -- pure white
+	parchment = "#D8C99B", -- accent for UI / menus
 
-	bright_black = "#3A2B3F", -- inkier version of bg
-	bright_red = "#FF6B6B", -- lighter red
-	bright_green = "#CFF5D2", -- brighter mint
-	bright_yellow = "#FFF8C7", -- light banana
-	bright_blue = "#C8E7FF", -- baby blue
-	bright_magenta = "#F5D3FF", -- light orchid
-	bright_cyan = "#DCFFF9", -- snow mint
-	bright_white = "#FAFAFA", -- soft frost
+	black = "#121110", -- near-black with brown undertones
+	white = "#FFFFFF",
 
-	comment = "#A398A6", -- muted lavender gray
-	cursor = "#DEB1F4", -- pastel glow
-	selection = "#40314C", -- soft violet haze
-	border = "#5E4C6F", -- dusty violet
-	status_line = "#36283F", -- near-bg dark with tint
+	bright_black = "#2A2A27",
+	bright_red = "#E85D75",
+	bright_green = "#D3E4B5",
+	bright_yellow = "#FFE9A3",
+	bright_blue = "#A4D2E2",
+	bright_magenta = "#E5C0DE",
+	bright_cyan = "#AEE9DA",
+	bright_white = "#F9F8F5",
+
+	comment = "#8C8579", -- dusty book brown
+	cursor = "#D8973C", -- golden beam
+	selection = "#3B3129", -- leatherbound brown
+	border = "#5C4435", -- wood grain
+	status_line = "#2D2A27", -- stone surface
 }
 
 return maple
