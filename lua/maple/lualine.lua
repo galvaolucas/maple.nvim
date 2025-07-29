@@ -25,7 +25,7 @@ local maple_theme = {}
 if transparent then
 	maple_theme = {
 		normal = {
-			a = { fg = colors.black, bg = nil, gui = "bold" },
+			a = { fg = colors.black, bg = colors.white, gui = "bold" },
 			b = { fg = colors.black, bg = colors.bright_magenta },
 			c = { fg = colors.black, bg = colors.bright_magenta },
 		},
@@ -42,7 +42,7 @@ else
 	maple_theme = {
 		normal = {
 			a = { fg = colors.black, bg = colors.white, gui = "bold" },
-			b = { fg = colors.white, bg = colors.black },
+			b = { fg = colors.black, bg = colors.bright_magenta },
 			c = { fg = colors.white },
 		},
 		insert = { a = { fg = colors.black, bg = colors.blue } },
