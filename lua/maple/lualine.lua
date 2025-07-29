@@ -87,7 +87,7 @@ require("lualine").setup({
 			"location",
 		},
 		lualine_z = {
-			{ clock() },
+			{ "os.date('%a')" },
 			separator = { right = section_separators.left },
 			left_padding = 2,
 		},
