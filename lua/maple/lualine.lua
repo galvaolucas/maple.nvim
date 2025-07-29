@@ -9,6 +9,7 @@ local colors = {
 	red = pallete.colors.red,
 	violet = pallete.colors.magenta,
 	bright_magenta = pallete.colors.bright_magenta,
+	brown = pallete.colors.brown,
 }
 
 local function clock()
@@ -42,15 +43,15 @@ else
 	maple_theme = {
 		normal = {
 			a = { fg = colors.black, bg = colors.white, gui = "bold" },
-			b = { fg = colors.white, bg = colors.black },
+			b = { fg = colors.white, bg = colors.brown },
 			c = { fg = colors.white },
 		},
 		insert = { a = { fg = colors.black, bg = colors.blue } },
 		visual = { a = { fg = colors.black, bg = colors.cyan } },
 		replace = { a = { fg = colors.black, bg = colors.red } },
 		inactive = {
-			a = { fg = colors.white, bg = colors.black, gui = "bold" },
-			b = { fg = colors.white, bg = colors.black },
+			a = { fg = colors.white, bg = colors.brown, gui = "bold" },
+			b = { fg = colors.white, bg = colors.brown },
 			c = { fg = colors.white },
 		},
 	}

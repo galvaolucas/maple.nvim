@@ -16,7 +16,7 @@ maple.colors = {
 	parchment = "#D8C99B", -- accent for UI / menus
 
 	black = "#121110", -- near-black with brown undertones
-	white = "#FFFFFF",
+	white = "#FFFDFD",
 
 	bright_black = "#2A2A27",
 	bright_red = "#E85D75",
@@ -25,13 +25,14 @@ maple.colors = {
 	bright_blue = "#A4D2E2",
 	bright_magenta = "#E5C0DE",
 	bright_cyan = "#AEE9DA",
-	bright_white = "#F9F8F5",
+	bright_white = "#FFFFFF",
 
 	comment = "#8C8579", -- dusty book brown
 	cursor = "#D8973C", -- golden beam
 	selection = "#3B3129", -- leatherbound brown
 	border = "#5C4435", -- wood grain
 	status_line = "#2D2A27", -- stone surface
+	brown = "#635C51",
 }
 
 return maple
