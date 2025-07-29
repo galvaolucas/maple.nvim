@@ -1,36 +1,35 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#0E0E11", -- true deep black-purple
-	fg = "#E6E6E6", -- soft ash
+	bg = "#2D1E2F", -- background (deep plum-black)
+	fg = "#F5F2EF", -- foreground (creamy off-white)
 
-	red = "#DE6E6A",
-	green = "#B4E7A0",
-	yellow = "#FFF0A5",
-	blue = "#96C9F5",
-	magenta = "#E4B0F8",
-	cyan = "#B2F2EF",
-	white = "#FAFAFA",
-	black = "#1E1F23",
+	red = "#F72C25", -- intense sorbet red
+	orange = "#F7B32B", -- golden peach
+	yellow = "#FCF6B1", -- banana cream
+	green = "#A9E5BB", -- mint sorbet
+	blue = "#A1D5FF", -- added: soft pastel blue
+	magenta = "#DEB1F4", -- added: soft lavender
+	cyan = "#B2F2EF", -- added: mint glacier
+	pink = "#FFB2D3", -- added: rose breeze
 
-	pink = "#FFAACD",
-	columbia_blue = "#D1E7FF",
+	black = "#1C121D", -- darkest tone
+	white = "#FFFFFF", -- pure white
 
-	-- Adjusted for deeper tones
-	bright_black = "#1A1A1D", -- barely lighter than bg
-	bright_red = "#FFA3A3",
-	bright_green = "#D0F9C7",
-	bright_yellow = "#FFF7BF",
-	bright_blue = "#BCE2FF",
-	bright_magenta = "#F5E0FF",
-	bright_cyan = "#DFFFFD",
-	bright_white = "#FFFFFF",
+	bright_black = "#3A2B3F", -- inkier version of bg
+	bright_red = "#FF6B6B", -- lighter red
+	bright_green = "#CFF5D2", -- brighter mint
+	bright_yellow = "#FFF8C7", -- light banana
+	bright_blue = "#C8E7FF", -- baby blue
+	bright_magenta = "#F5D3FF", -- light orchid
+	bright_cyan = "#DCFFF9", -- snow mint
+	bright_white = "#FAFAFA", -- soft frost
 
-	cursor = "#F5E0FF", -- glowing soft magenta
-	selection = "#26233A", -- dark violet gray
-	comment = "#8A8F9E", -- soft gray-lavender ink
-	border = "#6D5C96", -- rich purple-gray
-	status_line = "#1C1B24", -- almost-black, with tint
+	comment = "#A398A6", -- muted lavender gray
+	cursor = "#DEB1F4", -- pastel glow
+	selection = "#40314C", -- soft violet haze
+	border = "#5E4C6F", -- dusty violet
+	status_line = "#36283F", -- near-bg dark with tint
 }
 
 return maple
