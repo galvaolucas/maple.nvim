@@ -1,11 +1,11 @@
--- maple.nvim/lua/maple/init.lua
-
 local M = {}
 
 function M.setup(opts)
-	require("maple.theme").setup(opts or {}, require("maple.palette").colors(opts.theme or "autumn"))
-	local lualine = require("maple.lualine")
-	lualine.load_lualine(opts.theme)
+	opts = opts or {}
+	local colors = require("maple.palette").colors(opts.theme or "autumn")
+	require("maple.theme").setup(opts, colors)
+
+	vim.g.colors_name = "maple" -- this is what registers it as a proper colorscheme
 end
 
 return M
