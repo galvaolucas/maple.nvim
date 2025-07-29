@@ -76,9 +76,7 @@ require("lualine").setup({
 			"%=", -- center alignment
 		},
 		lualine_x = {
-			{ "diff" },
-			separator = { right = section_separators.left },
-			left_padding = 2,
+			{ "diff", separator = { right = section_separators.left }, left_padding = 2 },
 		},
 		lualine_y = {
 			"filetype",
