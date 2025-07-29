@@ -1,7 +1,7 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#0B3142",
+	bg = "#060606",
 	fg = "#F0EFF4",
 	red = "#DA5552",
 	green = "#BDE4A8",
