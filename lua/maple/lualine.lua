@@ -17,7 +17,8 @@ local function clock()
 end
 
 local transparent = false
-if maple and maple.config then
+
+if maple then
 	transparent = maple.opts.transparent or false
 end
 
