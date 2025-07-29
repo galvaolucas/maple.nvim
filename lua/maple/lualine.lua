@@ -10,6 +10,10 @@ local colors = {
 	violet = pallete.colors.magenta,
 }
 
+local function clock()
+	return os.date("%H:%M")
+end
+
 local transparent = false
 if maple and maple.config then
 	transparent = maple.opts.transparent or false
@@ -72,11 +76,20 @@ require("lualine").setup({
 			"%=", -- center alignment
 		},
 		lualine_x = {
-			{ "diff", "filesize" },
+			{ "diff" },
+			separator = { right = section_separators.left },
+			left_padding = 2,
 		},
-		lualine_y = { "filetype", "progress" },
+		lualine_y = {
+			"filetype",
+			"filesize",
+			"progress",
+			"location",
+		},
 		lualine_z = {
-			{ "location", separator = { right = section_separators.left }, left_padding = 2 },
+			{ clock },
+			separator = { right = section_separators.left },
+			left_padding = 2,
 		},
 	},
 	inactive_sections = {
