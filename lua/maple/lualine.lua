@@ -80,12 +80,10 @@ require("lualine").setup({
 			{ "diff" },
 		},
 		lualine_y = {
-			"filetype",
-			"filesize",
-			"progress",
-			"location",
-			separator = { left = section_separators.right },
-			left_padding = 2,
+			{ "filetype" },
+			{ "filesize" },
+			{ "progress" },
+			{ "location", separator = { left = section_separators.right }, left_padding = 2 },
 		},
 		lualine_z = {
 			{ clock, separator = { right = section_separators.left }, left_padding = 2 },
