@@ -1,5 +1,5 @@
 local maple = require("maple")
-local theme = maple.theme or "autumn"
+local theme = maple.opts.theme or "autumn"
 
 if theme == "autumn" then
 	maple.colors = {
