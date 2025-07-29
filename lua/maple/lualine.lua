@@ -42,7 +42,7 @@ else
 	maple_theme = {
 		normal = {
 			a = { fg = colors.black, bg = colors.white, gui = "bold" },
-			b = { fg = colors.black, bg = colors.bright_magenta },
+			b = { fg = colors.white, bg = colors.black },
 			c = { fg = colors.white },
 		},
 		insert = { a = { fg = colors.black, bg = colors.blue } },
