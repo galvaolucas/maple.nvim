@@ -249,6 +249,7 @@ function maple.setup(opts)
 		callback = function()
 			vim.api.nvim_set_hl(0, "NvimTreeDirectoryName", { fg = c.magenta })
 			vim.api.nvim_set_hl(0, "NvimTreeDirectoryIcon", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "Directory", { fg = c.magenta })
 		end,
 	})
 end
