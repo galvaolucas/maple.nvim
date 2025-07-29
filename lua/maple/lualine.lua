@@ -11,6 +11,7 @@ load_lualine = function(theme)
 		red = palette.red,
 		violet = palette.magenta,
 		bright_magenta = palette.bright_magenta,
+		bright_blue = palette.bright_blue,
 		brown = palette.brown,
 	}
 
@@ -45,15 +46,15 @@ load_lualine = function(theme)
 		maple_theme = {
 			normal = {
 				a = { fg = colors.black, bg = colors.white, gui = "bold" },
-				b = { fg = colors.white, bg = colors.brown },
+				b = { fg = colors.white, bg = colors.bright_blue },
 				c = { fg = colors.white },
 			},
 			insert = { a = { fg = colors.black, bg = colors.blue } },
 			visual = { a = { fg = colors.black, bg = colors.cyan } },
 			replace = { a = { fg = colors.black, bg = colors.red } },
 			inactive = {
-				a = { fg = colors.white, bg = colors.brown, gui = "bold" },
-				b = { fg = colors.white, bg = colors.brown },
+				a = { fg = colors.white, bg = colors.bright_blue, gui = "bold" },
+				b = { fg = colors.white, bg = colors.bright_blue },
 				c = { fg = colors.white },
 			},
 		}
