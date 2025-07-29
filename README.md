@@ -9,18 +9,6 @@ Features include:
 
 Themes available: autumn(default) and spring
 
-- Autumn
-
-<p align="center">
-  <img src="assets/maple_v1.4.png" alt="Maple Autumn Theme Preview" />
-</p>
-
-- Spring
-
-<p align="center">
-  <img src="https://github.com/galvaolucas/maple.nvim/blob/main/assets/spring.png?raw=true" alt="Maple Spring Theme Preview" />
-</p>
-
 - Spring with transparency on Wezterm terminal with JWR dark as terminal's theme
 
 <p align="center">
