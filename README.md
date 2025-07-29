@@ -18,7 +18,7 @@ Themes available: autumn(default) and spring
 - Spring
 
 <p align="center">
-  <img src="assets/spring.png" alt="Maple Spring Theme Preview" />
+  <img src="https://github.com/galvaolucas/maple.nvim/blob/main/assets/spring.png?raw=true" alt="Maple Spring Theme Preview" />
 </p>
 
 - Spring with transparency on Wezterm terminal with JWR dark as terminal's theme
