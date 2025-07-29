@@ -243,6 +243,14 @@ function maple.setup(opts)
 			end,
 		})
 	end
+
+	vim.api.nvim_create_autocmd({ "UIEnter", "ColorScheme" }, {
+		pattern = "*",
+		callback = function()
+			vim.api.nvim_set_hl(0, "NvimTreeDirectoryName", { fg = c.magenta })
+			vim.api.nvim_set_hl(0, "NvimTreeDirectoryIcon", { fg = c.magenta })
+		end,
+	})
 end
 
 return maple
