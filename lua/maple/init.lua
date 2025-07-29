@@ -1,11 +1,22 @@
 local M = {}
 
+M.options = {
+	theme = "autumn",
+	transparent = false,
+	italic = true,
+}
+
 function M.setup(opts)
-	opts = opts or {}
+	M.options = vim.tbl_deep_extend("force", M.options, opts or {})
+	return M.options
+end
+
+function M.load()
+	local opts = M.options
 	local colors = require("maple.palette").colors(opts.theme or "autumn")
 	require("maple.theme").setup(opts, colors)
 
-	vim.g.colors_name = "maple" -- this is what registers it as a proper colorscheme
+	vim.g.colors_name = "maple"
 end
 
 return M
