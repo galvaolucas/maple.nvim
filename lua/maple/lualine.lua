@@ -1,5 +1,5 @@
 local maple = require("maple")
-local pallete = require("maple.pallete")
+local pallete = require("maple.palette")
 
 local colors = {
 	blue = pallete.colors.blue,
