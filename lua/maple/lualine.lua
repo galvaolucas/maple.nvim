@@ -8,10 +8,11 @@ local colors = {
 	white = pallete.colors.white,
 	red = pallete.colors.red,
 	violet = pallete.colors.magenta,
+	bright_magenta = pallete.colors.bright_magenta,
 }
 
 local function clock()
-	return " " .. os.date("%H:%M")
+	return "  " .. os.date("%H:%M")
 end
 
 local transparent = false
@@ -25,8 +26,8 @@ if transparent then
 	maple_theme = {
 		normal = {
 			a = { fg = colors.black, bg = nil, gui = "bold" },
-			b = { fg = colors.white, bg = nil },
-			c = { fg = colors.white, bg = nil },
+			b = { fg = colors.black, bg = colors.bright_magenta },
+			c = { fg = colors.black, bg = colors.bright_magenta },
 		},
 		insert = { a = { fg = colors.black, bg = nil } },
 		visual = { a = { fg = colors.black, bg = nil } },
@@ -76,13 +77,15 @@ require("lualine").setup({
 			"%=", -- center alignment
 		},
 		lualine_x = {
-			{ "diff", separator = { right = section_separators.left }, left_padding = 2 },
+			{ "diff" },
 		},
 		lualine_y = {
 			"filetype",
 			"filesize",
 			"progress",
 			"location",
+			separator = { left = section_separators.right },
+			left_padding = 2,
 		},
 		lualine_z = {
 			{ clock, separator = { right = section_separators.left }, left_padding = 2 },
