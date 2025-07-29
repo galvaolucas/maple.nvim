@@ -1,5 +1,4 @@
 local maple = require("maple.pallete")
-local c = maple.colors
 
 local function hi(name, opts)
 	vim.api.nvim_set_hl(0, name, opts)
@@ -9,6 +8,7 @@ function maple.setup(opts)
 	opts = opts or {}
 	local transparent = opts.transparent or false
 	local italic = opts.italic or false
+	local c = maple.colors(opts.theme)
 
 	if transparent then
 		c.bg = "NONE"
