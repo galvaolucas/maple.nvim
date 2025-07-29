@@ -6,6 +6,7 @@ end
 
 function maple.setup(opts, c)
 	opts = opts or {}
+	c = c or require("maple.palette").colors(opts.theme or "autumn")
 	local transparent = opts.transparent or false
 	local italic = opts.italic or false
 
