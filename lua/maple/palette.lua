@@ -1,6 +1,4 @@
 local maple = require("maple")
-
--- Color definitions table
 local themes = {}
 
 themes.autumn = {
