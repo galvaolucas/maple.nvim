@@ -4,14 +4,14 @@ local p = require("maple.palette")
 load_lualine = function(theme)
 	local palette = p.colors(theme)
 	local colors = {
-		blue = palette.colors.blue,
-		cyan = palette.colors.cyan,
-		black = palette.colors.bright_black,
-		white = palette.colors.white,
-		red = palette.colors.red,
-		violet = palette.colors.magenta,
-		bright_magenta = palette.colors.bright_magenta,
-		brown = palette.colors.brown,
+		blue = palette.blue,
+		cyan = palette.cyan,
+		black = palette.bright_black,
+		white = palette.white,
+		red = palette.red,
+		violet = palette.magenta,
+		bright_magenta = palette.bright_magenta,
+		brown = palette.brown,
 	}
 
 	local function clock()
