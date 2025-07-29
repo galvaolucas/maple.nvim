@@ -1,7 +1,7 @@
 local maple = require("maple")
 
 load_lualine = function(theme)
-	local palette = maple.colors(theme)
+	local palette = maple.palette(theme)
 	local colors = {
 		blue = palette.colors.blue,
 		cyan = palette.colors.cyan,
