@@ -1,10 +1,9 @@
 local maple = {}
 
 maple.colors = {
-	bg = "#151619", -- darker charcoal
-	fg = "#E6E6E6", -- ash mist (unchanged)
+	bg = "#0E0E11", -- true deep black-purple
+	fg = "#E6E6E6", -- soft ash
 
-	-- Accent colors (unchanged, still pastel)
 	red = "#DE6E6A",
 	green = "#B4E7A0",
 	yellow = "#FFF0A5",
@@ -12,12 +11,13 @@ maple.colors = {
 	magenta = "#E4B0F8",
 	cyan = "#B2F2EF",
 	white = "#FAFAFA",
-	black = "#1E1F23", -- was bg before, now secondary dark
+	black = "#1E1F23",
+
 	pink = "#FFAACD",
 	columbia_blue = "#D1E7FF",
 
-	-- Brights (unchanged)
-	bright_black = "#2B2D30",
+	-- Adjusted for deeper tones
+	bright_black = "#1A1A1D", -- barely lighter than bg
 	bright_red = "#FFA3A3",
 	bright_green = "#D0F9C7",
 	bright_yellow = "#FFF7BF",
@@ -26,11 +26,11 @@ maple.colors = {
 	bright_cyan = "#DFFFFD",
 	bright_white = "#FFFFFF",
 
-	cursor = "#F5E0FF",
-	selection = "#2B2D3D", -- slightly cooler for better contrast
-	comment = "#7F8B97",
-	border = "#5E5B85", -- slightly more subdued
-	status_line = "#252529", -- darker for clearer separation
+	cursor = "#F5E0FF", -- glowing soft magenta
+	selection = "#26233A", -- dark violet gray
+	comment = "#8A8F9E", -- soft gray-lavender ink
+	border = "#6D5C96", -- rich purple-gray
+	status_line = "#1C1B24", -- almost-black, with tint
 }
 
 return maple

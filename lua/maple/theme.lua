@@ -171,7 +171,7 @@ function maple.setup(opts)
 				"@lsp.typemod.parameter.declaration.typescriptreact",
 				{ fg = c.bright_magenta, underline = true }
 			)
-			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescriptreact", { fg = c.bright_magenta, underline = true })
+			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescriptreact", { fg = c.bright_magenta })
 			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.bright_white, bold = false })
 			vim.api.nvim_set_hl(0, "@variable.typescript", { fg = c.bright_yellow, bold = false })
