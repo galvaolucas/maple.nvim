@@ -41,7 +41,7 @@ function maple.setup(opts)
 	hi("String", { fg = c.green })
 	hi("Number", { fg = c.yellow })
 	hi("Boolean", { fg = c.red })
-	hi("Constant", { fg = c.cyan })
+	hi("Constant", { fg = c.bright_blue })
 
 	hi("DiagnosticError", { fg = c.red, undercurl = false })
 	hi("DiagnosticWarn", { fg = c.columbia_blue, undercurl = false })
@@ -129,7 +129,9 @@ function maple.setup(opts)
 	hi("IncSearch", { bg = c.yellow, fg = c.black, bold = true })
 	hi("CursorLineNr", { fg = c.white, bold = true })
 	hi("SnacksDashboardDesc", { fg = c.magenta })
+
 	hi("LazySpecial", { fg = c.bright_magenta })
+	hi("LazyReasonPlugin", { fg = c.magenta })
 
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		pattern = "*",
