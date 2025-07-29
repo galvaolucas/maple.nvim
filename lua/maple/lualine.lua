@@ -11,7 +11,7 @@ local colors = {
 }
 
 local function clock()
-	return os.date("%H:%M")
+	return " " .. os.date("%H:%M")
 end
 
 local transparent = false
@@ -87,9 +87,7 @@ require("lualine").setup({
 			"location",
 		},
 		lualine_z = {
-			{ "os.date('%a')" },
-			separator = { right = section_separators.left },
-			left_padding = 2,
+			{ clock, separator = { right = section_separators.left }, left_padding = 2 },
 		},
 	},
 	inactive_sections = {
