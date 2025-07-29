@@ -27,6 +27,7 @@ maple.colors = {
 	selection = "#2E294E",
 	comment = "#61707D",
 	border = "#4F4789",
+	status_line = "#343434",
 }
 
 return maple
