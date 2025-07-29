@@ -1,6 +1,6 @@
 # Maple.nvim
 
-A warm, soft Neovim colorscheme inspired by the [**Maple VSCode theme**](https://github.com/subframe7536/vscode-theme-maple).  
+A warm, soft Neovim colorscheme inspired by the [**Maple VSCode theme**](https://github.com/subframe7536/vscode-theme-maple) with some other pastel colors.
 Features include:
 
 - Elegant pastel palette with calm colors
@@ -8,11 +8,7 @@ Features include:
 - Built-in Lualine theme support
 
 <p align="center">
-  <img src="assets/maple_1.png" alt="Maple Theme Preview" />
-</p>
-
-<p align="center">
-  <img src="assets/maple_2.png" alt="Maple Theme Preview" />
+  <img src="assets/maple_v1.3.png" alt="Maple Theme Preview" />
 </p>
 
 ## Installation
