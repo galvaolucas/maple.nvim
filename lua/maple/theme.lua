@@ -129,6 +129,7 @@ function maple.setup(opts)
 	hi("IncSearch", { bg = c.yellow, fg = c.black, bold = true })
 	hi("CursorLineNr", { fg = c.white, bold = true })
 	hi("SnacksDashboardDesc", { fg = c.magenta })
+	hi("LazySpecial", { fg = c.bright_magenta })
 
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		pattern = "*",
