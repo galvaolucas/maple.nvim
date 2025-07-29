@@ -166,11 +166,7 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@keyword.return.tsx", { fg = c.magenta, italic = italic })
 			vim.api.nvim_set_hl(0, "@lsp.type.variable.typescriptreact", { fg = c.bright_yellow })
 			vim.api.nvim_set_hl(0, "@lsp.type.parameter.typescriptreact", { fg = c.bright_magenta })
-			vim.api.nvim_set_hl(
-				0,
-				"@lsp.typemod.parameter.declaration.typescriptreact",
-				{ fg = c.bright_magenta, underline = true }
-			)
+			vim.api.nvim_set_hl(0, "@lsp.typemod.parameter.declaration.typescriptreact", { fg = c.bright_magenta })
 			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescriptreact", { fg = c.bright_magenta })
 			vim.api.nvim_set_hl(0, "@lsp.type.type.typescriptreact", { fg = c.bright_yellow, bold = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = c.bright_white, bold = false })
@@ -185,7 +181,6 @@ function maple.setup(opts)
 			vim.api.nvim_set_hl(0, "@lsp.mod.declaration.typescript", { fg = c.bright_blue, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.type.class.typescript", { fg = c.bright_white, bold = false })
 			vim.api.nvim_set_hl(0, "@lsp.type.variable.typescript", { fg = c.bright_white, bold = false })
-
 			vim.api.nvim_set_hl(
 				0,
 				"@lsp.typemod.parameter.declaration.typescript",
