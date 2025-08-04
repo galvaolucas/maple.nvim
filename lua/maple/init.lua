@@ -15,7 +15,7 @@ function M.load()
 	local opts = M.options
 	local colors = require("maple.palette").colors(opts.theme or "autumn")
 	require("maple.theme").setup(opts, colors)
-	require("maple.lualine")
+	require("maple.lualine").load_lualine(opts.theme)
 
 	vim.g.colors_name = "maple"
 end

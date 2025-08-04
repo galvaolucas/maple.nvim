@@ -19,9 +19,9 @@ load_lualine = function(theme)
 		return "  " .. os.date("%H:%M")
 	end
 
-	local transparent = false
+	local transparent = maple.options and maple.options.transparent or false
 	if maple and maple.config then
-		transparent = maple.opts.transparent or false
+		transparent = transparent or false
 	end
 
 	local maple_theme = {}
