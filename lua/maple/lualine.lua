@@ -62,7 +62,7 @@ load_lualine = function(theme)
 
 	local section_separators
 	if transparent then
-		section_separators = { left = "", right = "" }
+		section_separators = { left = "", right = "" }
 	else
 		section_separators = { left = "", right = "" }
 	end
@@ -74,7 +74,13 @@ load_lualine = function(theme)
 			section_separators = section_separators,
 		},
 		sections = {
-			lualine_a = { { "mode", separator = { left = section_separators.right }, right_padding = 2 } },
+			lualine_a = {
+				{
+					"mode",
+					separator = { left = section_separators.right, right = section_separators.left },
+					right_padding = 2,
+				},
+			},
 			lualine_b = { "filename", "branch" },
 			lualine_c = {
 				{ "diagnostics" },
