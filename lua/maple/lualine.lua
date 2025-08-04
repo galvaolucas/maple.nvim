@@ -96,7 +96,11 @@ load_lualine = function(theme)
 				{ "location", separator = { left = section_separators.right }, left_padding = 2 },
 			},
 			lualine_z = {
-				{ clock, separator = { right = section_separators.left }, left_padding = 2 },
+				{
+					clock,
+					separator = { right = section_separators.left, left = section_separators.right },
+					left_padding = 2,
+				},
 			},
 		},
 		inactive_sections = {
