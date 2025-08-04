@@ -30,12 +30,12 @@ load_lualine = function(theme)
 		maple_theme = {
 			normal = {
 				a = { fg = colors.black, bg = colors.white, gui = "bold" },
-				b = { fg = colors.black, bg = colors.bright_magenta },
-				c = { fg = colors.black, bg = colors.bright_magenta },
+				b = { fg = colors.white, bg = nil },
+				c = { fg = colors.white, bg = nil },
 			},
-			insert = { a = { fg = colors.black, bg = nil } },
-			visual = { a = { fg = colors.black, bg = nil } },
-			replace = { a = { fg = colors.black, bg = nil } },
+			insert = { a = { fg = colors.white, bg = nil } },
+			visual = { a = { fg = colors.white, bg = nil } },
+			replace = { a = { fg = colors.white, bg = nil } },
 			inactive = {
 				a = { fg = colors.white, bg = nil, gui = "bold" },
 				b = { fg = colors.white, bg = nil },
