@@ -128,7 +128,6 @@ function maple.setup(opts, c)
 	hi("Search", { bg = c.yellow, fg = c.black })
 	hi("IncSearch", { bg = c.yellow, fg = c.black, bold = true })
 	hi("CursorLineNr", { fg = c.white, bold = true })
-	hi("SnacksDashboardDesc", { fg = c.magenta })
 
 	hi("LazySpecial", { fg = c.bright_magenta })
 	hi("LazyReasonPlugin", { fg = c.magenta })
