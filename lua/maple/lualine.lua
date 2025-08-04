@@ -62,7 +62,7 @@ load_lualine = function(theme)
 
 	local section_separators
 	if transparent then
-		section_separators = { left = "|", right = "|" }
+		section_separators = { left = "", right = "" }
 	else
 		section_separators = { left = "", right = "" }
 	end
